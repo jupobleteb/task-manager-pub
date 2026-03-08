@@ -1,0 +1,35 @@
+# This is a comment - blank lines and lines starting with # are ignored.
+
+# Ignore a specific file
+debug.log
+config.local.json
+
+# Ignore all files with a specific extension anywhere in the project
+*.log
+*.tmp
+*.pyc
+
+# Ignore a specific directory and everything inside it (the trailing slash is important)
+logs/
+node_modules/
+build/
+
+# Ignore a directory named "temp" anywhere in the project
+**/temp/
+
+# Ignore files matching a pattern in a specific directory
+/docs/*.txt
+
+# Ignore only files in the root directory
+/config.file
+
+# Exception: don't ignore an important file within an otherwise ignored directory
+!logs/important.log
+
+# OS-specific files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# IDE-specific directories
+.vscode/ # VS Code settings
+.idea/ # IntelliJ IDEA settings
